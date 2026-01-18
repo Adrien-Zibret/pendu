@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+.boutonLettre{
+    width: 6%;
+    height: auto;
+    border-radius: 5px;
+    margin: 4px;
+    padding: 2px;
+    text-align: center;
+    background-color: orange;
+    &:hover{
+        scale: 1.4;
+    }
+}
+#espace{
+    width: fit-content;
+}
+.green{
+    background-color: aquamarine;
+    transform: translate(0, -10px);
+    opacity: 0;
+    transition: 2s;
+    &:hover{
+        scale: 1;
+    }
+}
+.red{
+    background-color: rgb(241, 93, 93);
+    transform: translate(0, 10px);
+    opacity: 0;
+    transition: 2s;
+    &:hover{
+        scale: 1;
+    }
+}
+.effacer{
+    opacity: 0;
+}
+#zoneMot{
+    height: 50px;
+}
+.empLettre{
+    display: inline-block;
+    height: 30px;
+    width: 3%;
+    margin: 0 5px;
+    vertical-align: middle;
+    border-bottom: 3px solid black;
+}
+#btnReco{
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+/* Mise en forme de l'image dans la table */
+.zoneImg{
+    position: relative;
+}
+#imgPendu{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 3;
+}
+#tablePourCacher{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+table tr td{
+    background-color: black;
+    border: none;
+    border-spacing: 0;
+}
+.caseAMontrer{
+    opacity: 0;
+    transition: all 2s ease 0.5s;
+}
+.hidden{
+    display: none;
+}
+#imgVictoire{
+    width: 100%;
+    scale: 1.1;
+    top: 10px;
+    left: 0;
+    z-index: 3;
+}
+.imgCitrouille{
+    width: 100%;
+    object-fit:cover;
+}
+/*style des icônes*/
+.clair{
+    opacity: 20%;
+}
+.fonce{
+    opacity: 100%;
+}
+.redIcone{
+    color: red;
+}
+.greenIcone{
+    color: green;
+}
